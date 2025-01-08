@@ -3,10 +3,13 @@ package com.matijacvetan.docgenerator.exception
 import com.matijacvetan.docgenerator.models.ErrorResponse
 import io.github.oshai.kotlinlogging.KotlinLogging
 import jakarta.servlet.http.HttpServletRequest
+import org.apache.catalina.connector.ClientAbortException
 import org.springframework.http.HttpStatus
+import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.ControllerAdvice
 import org.springframework.web.bind.annotation.ExceptionHandler
+import org.springframework.web.context.request.async.AsyncRequestNotUsableException
 import org.springframework.web.servlet.NoHandlerFoundException
 import java.time.LocalDateTime
 
@@ -18,8 +21,18 @@ class GlobalExceptionHandler {
     fun handleException(
         ex: Exception,
         request: HttpServletRequest,
-    ): ResponseEntity<ErrorResponse> {
-        logger.error(ex) { "Unhandled exception occurred:" }
+    ): ResponseEntity<Any> {
+        // Handle client abort exceptions gracefully
+        if (ex is ClientAbortException ||
+            ex is AsyncRequestNotUsableException ||
+            ex.cause is ClientAbortException
+        ) {
+            logger.debug(ex) { "Client disconnected prematurely" }
+            return ResponseEntity.status(HttpStatus.OK).build()
+        }
+
+        logger.error(ex) { "Unhandled exception occurred" }
+
         val errorResponse =
             ErrorResponse(
                 timestamp = LocalDateTime.now(),
@@ -30,7 +43,10 @@ class GlobalExceptionHandler {
                 details = if (isDevelopmentProfile()) ex.stackTraceToString() else null,
             )
 
-        return ResponseEntity(errorResponse, HttpStatus.INTERNAL_SERVER_ERROR)
+        return ResponseEntity
+            .status(HttpStatus.INTERNAL_SERVER_ERROR)
+            .contentType(MediaType.APPLICATION_JSON)
+            .body(errorResponse)
     }
 
     @ExceptionHandler(NoHandlerFoundException::class)
