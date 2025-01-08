@@ -13,12 +13,6 @@
 	<dataset name="Dataset1" uuid="9eed97b3-bf9a-4a79-b56b-491368e51121">
 		<query language="sql"><![CDATA[]]></query>
 	</dataset>
-	<parameter name="SocialImagePath" class="java.lang.String"/>
-	<parameter name="PhoneIconPath" class="java.lang.String"/>
-	<parameter name="EmailIconPath" class="java.lang.String"/>
-	<parameter name="WebsiteIconPath" class="java.lang.String"/>
-	<parameter name="LocationIconPath" class="java.lang.String"/>
-	<parameter name="GithubIconPath" class="java.lang.String"/>
 	<query language="sql"><![CDATA[]]></query>
 	<detail>
 		<band height="842" splitType="Stretch">
@@ -112,7 +106,7 @@
 				<text><![CDATA[Experienced in developing tools for business process optimization, PDF template generation, and various greenfield projects under my belt. My background also includes successful roles as a project manager and business analyst, enhancing my ability to deliver impactful software solutions. Always eager to embrace new technologies and tackle fresh challenges in the ever-evolving world of software development. ]]></text>
 			</element>
 			<element kind="image" uuid="08abdab4-4198-438f-91cf-19c688f76cd4" x="38" y="282" width="25" height="25">
-				<expression><![CDATA[$P{PhoneIconPath}]]></expression>
+				<expression><![CDATA["https://resume.matijacvetan.com/smartphone.png"]]></expression>
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				<property name="com.jaspersoft.studio.unit.width" value="px"/>
 			</element>
@@ -136,18 +130,18 @@
 				<pen lineWidth="2.0"/>
 			</element>
 			<element kind="image" uuid="3b259a2e-fa9a-4b1d-9498-95c5708eeb77" x="38" y="310" width="25" height="25">
-				<expression><![CDATA[$P{EmailIconPath}]]></expression>
+				<expression><![CDATA["https://resume.matijacvetan.com/mail.png"]]></expression>
 				<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			</element>
-			<element kind="image" uuid="b0172287-2e18-4a36-9d50-71224aaad555" x="38" y="340" width="25" height="25">
-				<expression><![CDATA[$P{WebsiteIconPath}]]></expression>
+			<element kind="image" uuid="b0172287-2e18-4a36-9d50-71224aaad555" x="38" y="340" width="25" height="25" linkType="None" linkTarget="Self">
+				<expression><![CDATA["https://resume.matijacvetan.com/click.png"]]></expression>
 				<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			</element>
 			<element kind="image" uuid="44340573-3090-4c18-a727-963abf89b3da" x="38" y="372" width="25" height="25">
-				<expression><![CDATA[$P{LocationIconPath}]]></expression>
+				<expression><![CDATA["https://resume.matijacvetan.com/location.png"]]></expression>
 				<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -314,12 +308,12 @@
 				<pen lineWidth="2.0"/>
 			</element>
 			<element kind="image" uuid="149b5765-d719-46f7-8057-46d335b0a624" x="32" y="36" width="190" height="190" linkType="None" linkTarget="Self">
-				<expression><![CDATA[$P{SocialImagePath}]]></expression>
+				<expression><![CDATA["https://resume.matijacvetan.com/headshotMC.png"]]></expression>
 				<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				<property name="com.jaspersoft.studio.unit.x" value="px"/>
 			</element>
 			<element kind="image" uuid="b4bd0c8b-3be0-4b4b-8e4c-20199f5e8dfb" x="35" y="398" width="33" height="33">
-				<expression><![CDATA[$P{GithubIconPath}]]></expression>
+				<expression><![CDATA["https://resume.matijacvetan.com/githubIcon.png"]]></expression>
 				<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>

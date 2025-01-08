@@ -3,7 +3,6 @@ package com.matijacvetan.docgenerator.service.impl
 import com.matijacvetan.docgenerator.service.ResumeDocumentationService
 import com.matijacvetan.docgenerator.service.impl.helper.DocumentGeneration.Companion.convertDocumentToPdfResponse
 import com.matijacvetan.docgenerator.service.impl.helper.DocumentGeneration.Companion.generatePdfAndEncodeToBase64
-import com.matijacvetan.docgenerator.service.impl.helper.DocumentGeneration.Companion.getResumeDocumentParametersWithPaths
 import io.github.oshai.kotlinlogging.KotlinLogging
 import org.springframework.http.ResponseEntity
 import org.springframework.stereotype.Service
@@ -32,12 +31,10 @@ class ResumeDocumentationServiceImpl : ResumeDocumentationService {
      * @throws IllegalStateException if the template path is not found.
      */
     private fun resumeDocumentGeneration(): String {
-        val documentPath =
-            this::class.java.getResource("/templates/mc.jasper")?.path
-                ?: throw IllegalStateException("Template path not found")
+        val templateStream =
+            this::class.java.getResourceAsStream("/templates/mc.jasper")
+                ?: throw IllegalStateException("Template not found")
 
-        val params = getResumeDocumentParametersWithPaths()
-
-        return generatePdfAndEncodeToBase64(documentPath, params)
+        return generatePdfAndEncodeToBase64(templateStream)
     }
 }

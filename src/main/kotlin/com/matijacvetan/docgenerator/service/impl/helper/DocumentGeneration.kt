@@ -5,9 +5,12 @@ import net.sf.jasperreports.engine.JREmptyDataSource
 import net.sf.jasperreports.engine.JRException
 import net.sf.jasperreports.engine.JasperExportManager
 import net.sf.jasperreports.engine.JasperFillManager
+import net.sf.jasperreports.engine.JasperReport
+import net.sf.jasperreports.engine.util.JRLoader
 import org.springframework.http.HttpHeaders
 import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
+import java.io.InputStream
 import java.util.Base64
 
 class DocumentGeneration private constructor() {
@@ -17,20 +20,21 @@ class DocumentGeneration private constructor() {
         /**
          * Generates a PDF from the given template path and data source list, and encodes the PDF to Base64.
          *
-         * @param documentPath Path to the JasperReports template.
          * @param params Map of parameters to populate the report.
          * @return Base64 encoded PDF as a String.
          * @throws JRException if there is an error during PDF generation or export.
          */
         fun generatePdfAndEncodeToBase64(
-            documentPath: String,
-            params: Map<String, Any> = emptyMap(),
+            templateStream: InputStream
         ): String =
             try {
-                logger.info { "Starting to fill template with data" }
+                val jasperReport = JRLoader.loadObject(templateStream) as JasperReport
                 val jasperPrint =
-                    JasperFillManager.fillReport(documentPath, params, JREmptyDataSource())
+                    JasperFillManager.fillReport(jasperReport, null, JREmptyDataSource())
+
+                logger.info { "Exporting filled template to PDF" }
                 val exportedPdfReport = JasperExportManager.exportReportToPdf(jasperPrint)
+
                 logger.info { "Encoding PDF to Base64" }
                 Base64.getEncoder().encodeToString(exportedPdfReport)
             } catch (e: JRException) {
@@ -62,23 +66,6 @@ class DocumentGeneration private constructor() {
                 .header(HttpHeaders.CONTENT_DISPOSITION, "inline; filename=\"MatijaCvetanCV.pdf\"")
                 .contentType(MediaType.APPLICATION_PDF)
                 .body(pdfBytes)
-        }
-
-        /**
-         * Returns a map of parameters for the resume document generation.
-         *
-         * @return A map of parameters with paths to the images used in the resume document.
-         */
-        fun getResumeDocumentParametersWithPaths(): Map<String, String> {
-            val documentPath = this::class.java.getResource("/static")?.path
-            return mapOf(
-                "SocialImagePath" to "$documentPath/headshotMC.png",
-                "PhoneIconPath" to "$documentPath/smartphone.png",
-                "EmailIconPath" to "$documentPath/mail.png",
-                "WebsiteIconPath" to "$documentPath/click.png",
-                "LocationIconPath" to "$documentPath/location.png",
-                "GithubIconPath" to "$documentPath/githubIcon.png",
-            )
         }
     }
 }
