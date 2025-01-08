@@ -1,0 +1,346 @@
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="mc" language="java" columnCount="1" pageWidth="595" pageHeight="842" orientation="Landscape" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="481c2975-30df-451a-9c70-c6e8771ff160" ignorePagination="true">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<dataset name="Dataset1" uuid="9eed97b3-bf9a-4a79-b56b-491368e51121">
+		<query language="sql"><![CDATA[]]></query>
+	</dataset>
+	<parameter name="SocialImagePath" class="java.lang.String"/>
+	<parameter name="PhoneIconPath" class="java.lang.String"/>
+	<parameter name="EmailIconPath" class="java.lang.String"/>
+	<parameter name="WebsiteIconPath" class="java.lang.String"/>
+	<parameter name="LocationIconPath" class="java.lang.String"/>
+	<parameter name="GithubIconPath" class="java.lang.String"/>
+	<query language="sql"><![CDATA[]]></query>
+	<detail>
+		<band height="842" splitType="Stretch">
+			<element kind="staticText" uuid="8c8d1d59-4b55-4156-bf43-92404ddb0465" x="252" y="234" width="288" height="30" fontName="RobotoFontFamily" fontSize="16.0" bold="true">
+				<text><![CDATA[Experience | 10+ Years of Expertise]]></text>
+			</element>
+			<element kind="rectangle" uuid="fb57b14e-80de-4a30-8cb3-88f9b91332b6" mode="Opaque" x="20" y="10" width="215" height="821" backcolor="#353234" radius="10">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			</element>
+			<element kind="staticText" uuid="1cd07264-d5e9-4dc2-afc6-f58496ca4857" x="35" y="255" width="100" height="28" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="16.0" bold="true">
+				<text><![CDATA[Contact]]></text>
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="staticText" uuid="71dccd9a-3b2c-4023-9117-ea15523a5db6" x="68" y="314" width="156" height="20" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" vTextAlign="Middle">
+				<text><![CDATA[  hello@matijacvetan.com]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<box>
+					<leftPen lineWidth="0.75"/>
+				</box>
+			</element>
+			<element kind="staticText" uuid="30394cf6-3dce-4dae-96b8-f7c7b09beacf" x="68" y="344" width="156" height="20" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" vTextAlign="Middle">
+				<text><![CDATA[  www.matijacvetan.com]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<box>
+					<leftPen lineWidth="0.75"/>
+				</box>
+			</element>
+			<element kind="staticText" uuid="2b548be7-3dfb-4b51-856a-111028ece7c7" x="68" y="374" width="156" height="20" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" vTextAlign="Middle">
+				<text><![CDATA[  Jastrebarsko, Croatia]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<box>
+					<leftPen lineWidth="0.75"/>
+				</box>
+			</element>
+			<element kind="staticText" uuid="496574be-2692-4de6-9b63-333a86d8e102" x="35" y="650" width="100" height="30" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="16.0" bold="true">
+				<text><![CDATA[Education]]></text>
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+			</element>
+			<element kind="staticText" uuid="a8966368-0090-42d6-bb7c-a4d1b6879c44" x="50" y="680" width="178" height="32" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0">
+				<text><![CDATA[TEHNIČKA ŠKOLA RUĐERA BOŠKOVIĆA]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="9ae74a80-3ce7-41af-88b2-1da46b7554d6" x="50" y="713" width="178" height="26" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" italic="true">
+				<text><![CDATA[Computer technician]]></text>
+			</element>
+			<element kind="staticText" uuid="ef3c34cb-ada1-4e86-b595-d00c9997fc24" x="50" y="740" width="178" height="20" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0">
+				<text><![CDATA[BRIGHTS LEARNING]]></text>
+			</element>
+			<element kind="staticText" uuid="9a485e6d-efef-478a-8a42-43673cf94305" x="50" y="760" width="168" height="40" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" italic="true">
+				<text><![CDATA[Certificate in Java Re-Skilling in 2022]]></text>
+			</element>
+			<element kind="staticText" uuid="572f4f8e-06c1-4ca5-a220-35282fe85ea6" x="35" y="452" width="100" height="30" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="16.0" bold="true">
+				<text><![CDATA[Skills]]></text>
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			</element>
+			<element kind="rectangle" uuid="0c85ed76-d44d-4b27-8410-03ee8463c617" mode="Opaque" x="27" y="487" width="54" height="25" backcolor="#626061" radius="10">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				<pen lineWidth="0.0"/>
+			</element>
+			<element kind="rectangle" uuid="ff7a50c1-be93-49e6-9770-7aa59657a846" mode="Opaque" x="179" y="487" width="44" height="25" backcolor="#626061" radius="10">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				<pen lineWidth="0.0"/>
+			</element>
+			<element kind="staticText" uuid="5626f9f4-37b3-49ab-a26a-851ce70ce4ea" x="27" y="487" width="54" height="25" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[.NET]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="staticText" uuid="7ba95d46-3735-4e49-b75d-3fa8417b973a" x="179" y="487" width="44" height="25" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[C#]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="rectangle" uuid="b139b1b8-e967-48a5-ba41-51e772232ec4" mode="Opaque" x="127" y="40" width="448" height="180" backcolor="#626061" radius="10">
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				<pen lineWidth="0.0"/>
+			</element>
+			<element kind="staticText" uuid="1f8690b7-7cbf-44a0-98da-481f5f754632" x="228" y="53" width="295" height="36" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="26.0" bold="false">
+				<text><![CDATA[MATIJA CVETAN]]></text>
+			</element>
+			<element kind="staticText" uuid="951b45eb-12d8-462d-8eb3-ba93f72c7458" x="228" y="89" width="155" height="23" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="16.0">
+				<text><![CDATA[Software Developer]]></text>
+			</element>
+			<element kind="staticText" uuid="f1969a1d-f70f-440f-9d2a-3439575f6844" x="228" y="118" width="334" height="100" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="11.0">
+				<text><![CDATA[Experienced in developing tools for business process optimization, PDF template generation, and various greenfield projects under my belt. My background also includes successful roles as a project manager and business analyst, enhancing my ability to deliver impactful software solutions. Always eager to embrace new technologies and tackle fresh challenges in the ever-evolving world of software development. ]]></text>
+			</element>
+			<element kind="image" uuid="08abdab4-4198-438f-91cf-19c688f76cd4" x="38" y="282" width="25" height="25">
+				<expression><![CDATA[$P{PhoneIconPath}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="line" uuid="a0a9a004-5027-4b05-b2c6-a8125413bb06" x="256" y="285" width="1" height="528">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="2.0"/>
+			</element>
+			<element kind="ellipse" uuid="c875e503-eb9b-4056-89d1-b40c41179b21" x="252" y="277" width="8" height="8">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="2.0"/>
+			</element>
+			<element kind="ellipse" uuid="50c13bff-e6d1-4e28-87a5-5291cd2ffd1e" x="252" y="485" width="8" height="8">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="2.0"/>
+			</element>
+			<element kind="ellipse" uuid="e9c0d19a-a93e-4a0c-ab60-8149ce732215" x="252" y="663" width="8" height="8">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="2.0"/>
+			</element>
+			<element kind="image" uuid="3b259a2e-fa9a-4b1d-9498-95c5708eeb77" x="38" y="310" width="25" height="25">
+				<expression><![CDATA[$P{EmailIconPath}]]></expression>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="image" uuid="b0172287-2e18-4a36-9d50-71224aaad555" x="38" y="340" width="25" height="25">
+				<expression><![CDATA[$P{WebsiteIconPath}]]></expression>
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="image" uuid="44340573-3090-4c18-a727-963abf89b3da" x="38" y="372" width="25" height="25">
+				<expression><![CDATA[$P{LocationIconPath}]]></expression>
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="b5d38e97-3d34-448e-8619-46d036f303e9" x="270" y="273" width="190" height="17" forecolor="#808280" fontName="RobotoFontFamily" fontSize="12.0">
+				<text><![CDATA[Oct 2022 - Present]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="393308e4-69f2-4ac7-86cb-5a90ea18238b" x="270" y="290" width="305" height="17" forecolor="#E11075" fontName="RobotoFontFamily" fontSize="12.0">
+				<text><![CDATA[Hrvatski Telekom]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			</element>
+			<element kind="staticText" uuid="9a187fe4-25d9-43d8-a4e0-8ae317f2d9f4" x="270" y="307" width="305" height="22" fontName="RobotoFontFamily" fontSize="13.0" bold="true">
+				<text><![CDATA[Software Developer]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="d9b7a210-418f-4250-a03a-5a18350f6e05" x="270" y="329" width="304" height="146" fontName="RobotoFontFamily" fontSize="11.0">
+				<text><![CDATA[•  Working as part of the documentation team, continuously 
+    improving and maintaining documentation services.
+•  Designing, developing, and deploying new applications from
+    scratch using .NET, Kotlin, and React.
+•  Working on monolithic and event-driven microservices
+    architectures across multiple services.
+•  Leading weekly knowledge-sharing meetings to promote
+    team learning and collaboration.
+•  Implementing linters and code analysis tools to ensure
+   clean, maintainable code and adherence to industry 
+   standards.]]></text>
+			</element>
+			<element kind="staticText" uuid="bee0fbde-8765-41ba-9e44-b9b534e787db" x="270" y="516" width="305" height="22" fontName="RobotoFontFamily" fontSize="13.0" bold="true">
+				<text><![CDATA[Business Analyst]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="cdbe99d6-83fe-46d5-a5b7-d39d720e448e" x="270" y="482" width="190" height="17" forecolor="#808280" fontName="RobotoFontFamily" fontSize="12.0">
+				<text><![CDATA[2020-2022]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="5eea6568-0b52-43ba-ae55-49d3636d289a" x="270" y="499" width="305" height="17" forecolor="#E11075" fontName="RobotoFontFamily" fontSize="12.0">
+				<text><![CDATA[Hrvatski Telekom]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="e8d9ecdb-01f9-49ed-8874-a8a2dbdaab51" x="270" y="538" width="310" height="122" fontName="RobotoFontFamily" fontSize="11.0">
+				<text><![CDATA[•  Defining business requirements and creating user stories
+•  Communication with stakeholders/partners/sales and
+    project status reporting
+•  Coordination of internal department (IT, sales, finance, etc.) 
+    and vendors
+•  Analyze business data and create insightful reports with SQL
+•  Managing multiple projects
+•  Creating test plan and leading the testing team through
+    integration and regression testing]]></text>
+			</element>
+			<element kind="staticText" uuid="dfae85d1-1805-4a22-a2ac-84409defbac7" x="270" y="694" width="305" height="22" fontName="RobotoFontFamily" fontSize="13.0" bold="true">
+				<text><![CDATA[Sales process and eficiency expert]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="00d67182-d87f-41dc-9776-5c2ae0d9d5cd" x="270" y="660" width="190" height="17" forecolor="#808280" fontName="RobotoFontFamily" fontSize="12.0">
+				<text><![CDATA[2017-2020]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="4eca4be3-0ea9-4584-a3c0-a16de4261639" x="270" y="677" width="305" height="17" forecolor="#E11075" fontName="RobotoFontFamily" fontSize="12.0">
+				<text><![CDATA[Hrvatski Telekom]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="c17b3fc2-4f3d-4d85-8287-37e4848c740d" x="270" y="716" width="305" height="104" fontName="RobotoFontFamily" fontSize="11.0">
+				<text><![CDATA[•  Implementation of new business solutions, project 
+    coordination, and process simplification
+•  PM role for projects related to business processes
+•  Writing functional specifications
+•  Creating and executing tests for integration and regression 
+    testing
+•  Maintaining and improving the company knowledge base]]></text>
+			</element>
+			<element kind="ellipse" uuid="1a5fbf82-34b8-42c7-96b4-c87a2f4d8a55" x="35" y="684" width="8" height="8" backcolor="#626061">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="0.0"/>
+			</element>
+			<element kind="ellipse" uuid="1af42d34-b88c-461f-aed7-65cef034cca9" x="35" y="744" width="8" height="8" backcolor="#626061">
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="0.0"/>
+			</element>
+			<element kind="rectangle" uuid="bda9e9b0-21c7-463c-bb41-d35401038997" mode="Opaque" x="27" y="522" width="54" height="25" backcolor="#626061" radius="10">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="0.0"/>
+			</element>
+			<element kind="staticText" uuid="823cc27e-3bd6-4942-8808-281a2fbc44b9" x="27" y="522" width="54" height="25" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Kotlin]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+			</element>
+			<element kind="rectangle" uuid="8143ee30-92ed-49b4-bf6a-aba80d4d22cb" mode="Opaque" x="92" y="487" width="73" height="25" backcolor="#626061" radius="10">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				<pen lineWidth="0.0"/>
+			</element>
+			<element kind="staticText" uuid="375b288d-8d29-4e0b-99b0-3e62d5a778a0" x="92" y="487" width="73" height="25" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[ASP.NET]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="rectangle" uuid="0d8206cf-8223-407e-bf9d-66bd15bdd0d6" mode="Opaque" x="104" y="522" width="50" height="25" backcolor="#626061" radius="10">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="0.0"/>
+			</element>
+			<element kind="staticText" uuid="328d519e-f80d-4572-a661-4a365b92384b" x="104" y="522" width="50" height="25" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[React]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="rectangle" uuid="9ac3f56d-2df3-4b72-83c4-50acf1626e48" mode="Opaque" x="146" y="592" width="77" height="25" backcolor="#626061" radius="10">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				<pen lineWidth="0.0"/>
+			</element>
+			<element kind="staticText" uuid="5db1adcd-339c-4616-8d9c-e330b98d1211" x="146" y="592" width="77" height="25" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[TypeScript]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="rectangle" uuid="463c0239-c7a8-4d31-9aa6-71944347e663" mode="Opaque" x="108" y="557" width="115" height="25" backcolor="#626061" radius="10">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				<pen lineWidth="0.0"/>
+			</element>
+			<element kind="staticText" uuid="abc4a1dc-d223-4609-98b8-ebacdd6b8258" x="108" y="557" width="115" height="25" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[SQL (PostgreSQL)]]></text>
+				<property name="com.jaspersoft.studio.unit.y" value="px"/>
+			</element>
+			<element kind="rectangle" uuid="764da48d-c393-4010-8c43-a7c1a012f75a" mode="Opaque" x="176" y="522" width="47" height="25" backcolor="#626061" radius="10">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="0.0"/>
+			</element>
+			<element kind="staticText" uuid="6b3ff2fb-d919-46cf-87c2-13e31bc417a0" x="176" y="522" width="47" height="25" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[Java]]></text>
+			</element>
+			<element kind="rectangle" uuid="55e9429b-424b-431b-8f43-d67abea2eb46" mode="Opaque" x="27" y="557" width="72" height="25" backcolor="#626061" radius="10">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<pen lineWidth="0.0"/>
+			</element>
+			<element kind="staticText" uuid="de9adcf9-a8be-42c2-ab68-e3b8d17bb500" x="27" y="557" width="72" height="25" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[SpringBoot]]></text>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="rectangle" uuid="979567a6-0ef2-480c-8d3d-9f98021b77f8" mode="Opaque" x="27" y="592" width="113" height="25" backcolor="#626061" radius="10">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="0.0"/>
+			</element>
+			<element kind="staticText" uuid="c5aa1838-6557-427a-b014-17990a6ff9cb" x="27" y="592" width="113" height="25" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" hTextAlign="Center" vTextAlign="Middle">
+				<text><![CDATA[NoSQL (MongoDB)]]></text>
+			</element>
+			<element kind="line" uuid="cf3f8038-54e4-498e-b8a8-44852c12c7a5" x="256" y="816" width="1" height="2">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="2.0"/>
+			</element>
+			<element kind="line" uuid="17121ae4-9c9e-4443-a5d7-ff4ff72535aa" x="256" y="821" width="1" height="2">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="2.0"/>
+			</element>
+			<element kind="line" uuid="f312583b-5661-4a80-bd40-c7bb64e00bff" x="256" y="826" width="1" height="2">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="2.0"/>
+			</element>
+			<element kind="image" uuid="149b5765-d719-46f7-8057-46d335b0a624" x="32" y="36" width="190" height="190" linkType="None" linkTarget="Self">
+				<expression><![CDATA[$P{SocialImagePath}]]></expression>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+			</element>
+			<element kind="image" uuid="b4bd0c8b-3be0-4b4b-8e4c-20199f5e8dfb" x="35" y="398" width="33" height="33">
+				<expression><![CDATA[$P{GithubIconPath}]]></expression>
+				<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="f2701528-109d-4f8d-b5e7-5ffd7c74ad50" x="68" y="405" width="156" height="20" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" linkType="Reference" linkTarget="Self" vTextAlign="Middle">
+				<expression><![CDATA["  3DBits"]]></expression>
+				<hyperlinkReferenceExpression><![CDATA["https://github.com/3Dbits"]]></hyperlinkReferenceExpression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="a1ceb759-7299-4fc3-8536-bd2246d1a35a" x="68" y="284" width="156" height="20" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" linkType="Reference" linkTarget="Self" vTextAlign="Middle">
+				<expression><![CDATA["  +385 99198 5645"]]></expression>
+				<hyperlinkReferenceExpression><![CDATA["https://wa.me/385991985645"]]></hyperlinkReferenceExpression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+				</box>
+			</element>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</detail>
+</jasperReport>
