@@ -20,13 +20,10 @@ class DocumentGeneration private constructor() {
         /**
          * Generates a PDF from the given template path and data source list, and encodes the PDF to Base64.
          *
-         * @param params Map of parameters to populate the report.
          * @return Base64 encoded PDF as a String.
          * @throws JRException if there is an error during PDF generation or export.
          */
-        fun generatePdfAndEncodeToBase64(
-            templateStream: InputStream
-        ): String =
+        fun generatePdfAndEncodeToBase64(templateStream: InputStream): String =
             try {
                 val jasperReport = JRLoader.loadObject(templateStream) as JasperReport
                 val jasperPrint =
