@@ -1,32 +1,26 @@
-# Use a base image with JDK 21
-FROM eclipse-temurin:21-jdk
+# Build stage
+FROM gradle:8.5-jdk21 AS build
 
-# Set working directory
 WORKDIR /app
 
-# Copy Gradle files
-COPY build.gradle.kts settings.gradle.kts gradlew ./
-COPY gradle gradle
+# Copy gradle config files first to leverage Docker cache
+COPY gradle.properties settings.gradle.kts build.gradle.kts ./
+COPY gradle ./gradle
 
 # Copy source code
-COPY src src
-
-# Grant execution permissions for gradlew
-RUN chmod +x gradlew
+COPY src ./src
+COPY libs ./libs
 
 # Build the application
-RUN ./gradlew build
+RUN gradle build --no-daemon
 
-# Use JRE 21 for runtime
-FROM eclipse-temurin:21-jre
+# Runtime stage
+FROM eclipse-temurin:21-jre-jammy
 
 WORKDIR /app
 
-# Copy the built artifact from the build stage
-COPY --from=0 /app/build/libs/*.jar app.jar
+# Copy the built artifact from build stage
+COPY --from=build /app/build/libs/*.jar app.jar
 
-# Expose port (adjust if needed)
-EXPOSE 8080
-
-# Run the application with Java 21 features enabled
-CMD ["java", "--enable-preview", "-jar", "app.jar"]
+# Run the application
+ENTRYPOINT ["java", "-jar", "app.jar"]
