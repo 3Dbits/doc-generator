@@ -10,6 +10,7 @@ COPY gradle ./gradle
 # Copy source code
 COPY src ./src
 COPY libs ./libs
+COPY resources ./resources
 
 # Build the application
 RUN gradle build --no-daemon
