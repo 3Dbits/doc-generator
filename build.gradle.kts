@@ -31,8 +31,12 @@ dependencies {
     implementation("org.springdoc:springdoc-openapi-starter-common:${property("openApiStarterCommonVersion")}")
 
     // reports
-    implementation("net.sf.jasperreports:jasperreports:${property("jasperReportsVersion")}")
-    implementation("net.sf.jasperreports:jasperreports-pdf:${property("jasperReportsPdfVersion")}")
+    implementation("net.sf.jasperreports:jasperreports:${property("jasperReportsVersion")}") {
+        exclude(group = "commons-logging", module = "commons-logging")
+    }
+    implementation("net.sf.jasperreports:jasperreports-pdf:${property("jasperReportsPdfVersion")}") {
+        exclude(group = "commons-logging", module = "commons-logging")
+    }
     implementation(files("libs/RobotoFontFamily.jar"))
 
     developmentOnly("org.springframework.boot:spring-boot-devtools")
@@ -50,8 +54,6 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
-apply(plugin = "org.jlleitschuh.gradle.ktlint")
-
 dependencyManagement {
     imports {
         mavenBom("org.springframework.cloud:spring-cloud-dependencies:${property("springCloudVersion")}")
@@ -68,6 +70,6 @@ configure<KtlintExtension> {
     version.set("1.5.0")
 }
 
-tasks.withType<Test> {
-    useJUnitPlatform()
-}
+//  tasks.withType<Test> {
+//    useJUnitPlatform()
+//  }

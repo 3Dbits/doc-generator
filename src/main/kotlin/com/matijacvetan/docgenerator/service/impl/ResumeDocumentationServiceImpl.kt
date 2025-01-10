@@ -6,6 +6,8 @@ import com.matijacvetan.docgenerator.service.impl.helper.DocumentGeneration.Comp
 import io.github.oshai.kotlinlogging.KotlinLogging
 import org.springframework.http.ResponseEntity
 import org.springframework.stereotype.Service
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 @Service
 class ResumeDocumentationServiceImpl : ResumeDocumentationService {
@@ -35,6 +37,20 @@ class ResumeDocumentationServiceImpl : ResumeDocumentationService {
             this::class.java.getResourceAsStream("/templates/mc.jasper")
                 ?: throw IllegalStateException("Template not found")
 
-        return generatePdfAndEncodeToBase64(templateStream)
+        val formattedDateTime = formattedDateTimeNow()
+        val params =
+            mutableMapOf(
+                "FooterBuildText" to
+                    "Created on $formattedDateTime based on repository <a href=\"https://github.com/3Dbits/doc-generator\" target=\"_blank\" style=\"text-decoration: underline;\">doc-generator</a>.",
+            )
+
+        return generatePdfAndEncodeToBase64(templateStream, params)
+    }
+
+    private fun formattedDateTimeNow(): String? {
+        val currentDateTime = LocalDateTime.now()
+        val formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm")
+        val formattedDateTime = currentDateTime.format(formatter)
+        return formattedDateTime
     }
 }

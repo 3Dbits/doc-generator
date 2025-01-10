@@ -23,11 +23,14 @@ class DocumentGeneration private constructor() {
          * @return Base64 encoded PDF as a String.
          * @throws JRException if there is an error during PDF generation or export.
          */
-        fun generatePdfAndEncodeToBase64(templateStream: InputStream): String =
+        fun generatePdfAndEncodeToBase64(
+            templateStream: InputStream,
+            params: Map<String, Any>? = null,
+        ): String =
             try {
                 val jasperReport = JRLoader.loadObject(templateStream) as JasperReport
                 val jasperPrint =
-                    JasperFillManager.fillReport(jasperReport, null, JREmptyDataSource())
+                    JasperFillManager.fillReport(jasperReport, params, JREmptyDataSource())
 
                 logger.info { "Exporting filled template to PDF" }
                 val exportedPdfReport = JasperExportManager.exportReportToPdf(jasperPrint)
