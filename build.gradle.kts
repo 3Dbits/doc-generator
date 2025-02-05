@@ -37,6 +37,7 @@ dependencies {
     implementation("net.sf.jasperreports:jasperreports-pdf:${property("jasperReportsPdfVersion")}") {
         exclude(group = "commons-logging", module = "commons-logging")
     }
+    // Font family for JasperReports
     implementation(files("libs/RobotoFontFamily.jar"))
 
     developmentOnly("org.springframework.boot:spring-boot-devtools")

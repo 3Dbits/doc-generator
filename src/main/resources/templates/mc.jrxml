@@ -17,8 +17,8 @@
 	<query language="sql"><![CDATA[]]></query>
 	<detail>
 		<band height="842" splitType="Stretch">
-			<element kind="staticText" uuid="8c8d1d59-4b55-4156-bf43-92404ddb0465" x="252" y="228" width="288" height="30" fontName="RobotoFontFamily" fontSize="16.0" bold="true">
-				<text><![CDATA[Experience | 10+ Years of Expertise]]></text>
+			<element kind="staticText" uuid="8c8d1d59-4b55-4156-bf43-92404ddb0465" x="252" y="228" width="338" height="30" fontName="RobotoFontFamily" fontSize="16.0" bold="true">
+				<text><![CDATA[Work History | 10+ Years of Expertise]]></text>
 			</element>
 			<element kind="rectangle" uuid="fb57b14e-80de-4a30-8cb3-88f9b91332b6" mode="Opaque" x="20" y="10" width="215" height="821" backcolor="#353234" radius="10">
 				<property name="com.jaspersoft.studio.unit.x" value="px"/>
@@ -103,8 +103,8 @@
 			<element kind="staticText" uuid="951b45eb-12d8-462d-8eb3-ba93f72c7458" x="228" y="79" width="155" height="23" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="16.0">
 				<text><![CDATA[Software Developer]]></text>
 			</element>
-			<element kind="staticText" uuid="f1969a1d-f70f-440f-9d2a-3439575f6844" x="228" y="108" width="334" height="100" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="11.0">
-				<text><![CDATA[Experienced in developing tools for business process optimization, PDF template generation, and various greenfield projects under my belt. My background also includes successful roles as a project manager and business analyst, enhancing my ability to deliver impactful software solutions. Always eager to embrace new technologies and tackle fresh challenges in the ever-evolving world of software development. ]]></text>
+			<element kind="staticText" uuid="f1969a1d-f70f-440f-9d2a-3439575f6844" x="228" y="108" width="346" height="100" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="11.0">
+				<text><![CDATA[Specialized in developing tools for business process optimization and PDF template generation, with a strong track record in greenfield projects. My background also includes successful roles as a project manager and business analyst, enhancing my ability to deliver impactful software solutions. Always eager to embrace new technologies and tackle fresh challenges in the ever-evolving world of software development. ]]></text>
 			</element>
 			<element kind="image" uuid="08abdab4-4198-438f-91cf-19c688f76cd4" x="38" y="257" width="25" height="25">
 				<expression><![CDATA["https://resume.matijacvetan.com/smartphone.png"]]></expression>
@@ -148,7 +148,7 @@
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			</element>
 			<element kind="staticText" uuid="b5d38e97-3d34-448e-8619-46d036f303e9" x="270" y="267" width="190" height="17" forecolor="#808280" fontName="RobotoFontFamily" fontSize="12.0">
-				<text><![CDATA[Oct 2022 - Present]]></text>
+				<text><![CDATA[10/2022 - Present]]></text>
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			</element>
 			<element kind="staticText" uuid="393308e4-69f2-4ac7-86cb-5a90ea18238b" x="270" y="284" width="305" height="17" forecolor="#E11075" fontName="RobotoFontFamily" fontSize="12.0">
@@ -164,7 +164,7 @@
 				<text><![CDATA[•  Working as part of the documentation team, continuously 
     improving and maintaining documentation services.
 •  Designing, developing, and deploying new applications from
-    scratch using .NET, Kotlin, and React.
+    scratch using .NET, Kotlin/Spring Boot, and React.
 •  Working on monolithic and event-driven microservices
     architectures across multiple services.
 •  Leading weekly knowledge-sharing meetings to promote
@@ -178,7 +178,7 @@
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			</element>
 			<element kind="staticText" uuid="cdbe99d6-83fe-46d5-a5b7-d39d720e448e" x="270" y="476" width="190" height="17" forecolor="#808280" fontName="RobotoFontFamily" fontSize="12.0">
-				<text><![CDATA[2020-2022]]></text>
+				<text><![CDATA[06/2020 - 10/2022]]></text>
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			</element>
 			<element kind="staticText" uuid="5eea6568-0b52-43ba-ae55-49d3636d289a" x="270" y="493" width="305" height="17" forecolor="#E11075" fontName="RobotoFontFamily" fontSize="12.0">
@@ -201,7 +201,7 @@
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			</element>
 			<element kind="staticText" uuid="00d67182-d87f-41dc-9776-5c2ae0d9d5cd" x="270" y="654" width="190" height="17" forecolor="#808280" fontName="RobotoFontFamily" fontSize="12.0">
-				<text><![CDATA[2017-2020]]></text>
+				<text><![CDATA[07/2017 - 06/2020]]></text>
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			</element>
 			<element kind="staticText" uuid="4eca4be3-0ea9-4584-a3c0-a16de4261639" x="270" y="671" width="305" height="17" forecolor="#E11075" fontName="RobotoFontFamily" fontSize="12.0">
@@ -319,7 +319,7 @@
 				<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			</element>
-			<element kind="textField" uuid="f2701528-109d-4f8d-b5e7-5ffd7c74ad50" x="68" y="380" width="156" height="20" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" linkType="Reference" linkTarget="Self" vTextAlign="Middle">
+			<element kind="textField" uuid="f2701528-109d-4f8d-b5e7-5ffd7c74ad50" x="68" y="380" width="156" height="20" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" linkType="Reference" linkTarget="Blank" vTextAlign="Middle">
 				<expression><![CDATA["  3DBits"]]></expression>
 				<hyperlinkReferenceExpression><![CDATA["https://github.com/3Dbits"]]></hyperlinkReferenceExpression>
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -327,7 +327,7 @@
 					<leftPen lineWidth="1.0"/>
 				</box>
 			</element>
-			<element kind="textField" uuid="a1ceb759-7299-4fc3-8536-bd2246d1a35a" x="68" y="259" width="156" height="20" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" linkType="Reference" linkTarget="Self" vTextAlign="Middle">
+			<element kind="textField" uuid="a1ceb759-7299-4fc3-8536-bd2246d1a35a" x="68" y="259" width="156" height="20" forecolor="#FFFFFF" fontName="RobotoFontFamily" fontSize="12.0" linkType="Reference" linkTarget="Blank" vTextAlign="Middle">
 				<expression><![CDATA["  +385 99198 5645"]]></expression>
 				<hyperlinkReferenceExpression><![CDATA["https://wa.me/385991985645"]]></hyperlinkReferenceExpression>
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
@@ -335,7 +335,7 @@
 					<leftPen lineWidth="1.0"/>
 				</box>
 			</element>
-			<element kind="textField" uuid="5b2c7f7a-5f95-4162-acfa-6591edf1005e" x="270" y="818" width="323" height="19" forecolor="#545454" markup="html" fontName="RobotoFontFamily" fontSize="9.0" hTextAlign="Right" vTextAlign="Bottom">
+			<element kind="textField" uuid="5b2c7f7a-5f95-4162-acfa-6591edf1005e" x="270" y="818" width="323" height="19" forecolor="#545454" markup="html" fontName="RobotoFontFamily" fontSize="9.0" linkType="None" linkTarget="Self" hTextAlign="Right" vTextAlign="Bottom">
 				<expression><![CDATA[$P{FooterBuildText}]]></expression>
 				<box rightPadding="5"/>
 			</element>
