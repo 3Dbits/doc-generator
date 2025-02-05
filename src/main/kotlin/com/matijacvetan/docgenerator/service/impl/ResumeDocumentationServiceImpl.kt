@@ -6,7 +6,8 @@ import com.matijacvetan.docgenerator.service.impl.helper.DocumentGeneration.Comp
 import io.github.oshai.kotlinlogging.KotlinLogging
 import org.springframework.http.ResponseEntity
 import org.springframework.stereotype.Service
-import java.time.LocalDateTime
+import java.time.ZoneId
+import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 
 @Service
@@ -48,9 +49,9 @@ class ResumeDocumentationServiceImpl : ResumeDocumentationService {
     }
 
     private fun formattedDateTimeNow(): String? {
-        val currentDateTime = LocalDateTime.now()
+        val zoneId = ZoneId.of("Europe/Zagreb")
+        val currentDateTime = ZonedDateTime.now(zoneId)
         val formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm")
-        val formattedDateTime = currentDateTime.format(formatter)
-        return formattedDateTime
+        return currentDateTime.format(formatter)
     }
 }
